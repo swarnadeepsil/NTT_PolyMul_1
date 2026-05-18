@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/swarn/Desktop/Verilog_Vivado/NTT_PolyMul_1/NTT_PolyMul_1.srcs/sources_1/new/ntt_butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ct_butterfly
+INFO: [VRFC 10-311] analyzing module gs_butterfly
+INFO: [VRFC 10-311] analyzing module mod_multiplier
+INFO: [VRFC 10-311] analyzing module mod_adder
+INFO: [VRFC 10-311] analyzing module mod_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/swarn/Desktop/Verilog_Vivado/NTT_PolyMul_1/NTT_PolyMul_1.srcs/sources_1/new/ntt_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/swarn/Desktop/Verilog_Vivado/NTT_PolyMul_1/NTT_PolyMul_1.srcs/sim_1/new/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb

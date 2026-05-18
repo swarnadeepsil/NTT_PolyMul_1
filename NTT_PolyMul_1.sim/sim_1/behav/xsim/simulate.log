@@ -1,0 +1,65 @@
+Time resolution is 1 ps
+WARNING: file C:UsersswarnDesktopVerilog_VivadoNTT_PolyMul_1
+tt_params.txt could not be opened
+[TB] ntt_params.txt not found - using built-in defaults.
+
+============================================================
+  NTT Core Testbench
+  modulus=89  omega=37  omega_inv=77  n_inv=78
+============================================================
+  Input  A = [1, 2, 3, 4, 0, 0, 0, 0]
+  Input  B = [5, 4, 3, 2, 0, 0, 0, 0]
+============================================================
+
+[TEST 1]  NTT(A)  -  DIF (GS butterfly)
+  NTT(A) = [10, 87, 19, 66, 47, 70, 71, 83]
+   idx         got    expected  status
+  ------------------------------------------
+  [0]          10          10    OK
+  [1]          87          87    OK
+  [2]          19          19    OK
+  [3]          66          66    OK
+  [4]          47          47    OK
+  [5]          70          70    OK
+  [6]          71          71    OK
+  [7]          83          83    OK
+  TEST 1 : PASS
+
+[TEST 2]  NTT(B)  -  DIF (GS butterfly)
+  NTT(B) = [14, 2, 70, 23, 12, 24, 25, 48]
+   idx         got    expected  status
+  ------------------------------------------
+  [0]          14          14    OK
+  [1]           2           2    OK
+  [2]          70          70    OK
+  [3]          23          23    OK
+  [4]          12          12    OK
+  [5]          24          24    OK
+  [6]          25          25    OK
+  [7]          48          48    OK
+  TEST 2 : PASS
+
+[STEP]  Pointwise multiply  C = NTT(A) * NTT(B) mod 89
+  C      = [51, 85, 84, 5, 30, 78, 84, 68]
+
+[TEST 3]  INTT(C)  -  DIT (CT butterfly) + scale by n_inv
+  INTT(C)= [5, 14, 26, 40, 29, 18, 8, 0]
+   idx         got    expected  status
+  ------------------------------------------
+  [0]           5           5    OK
+  [1]          14          14    OK
+  [2]          26          26    OK
+  [3]          40          40    OK
+  [4]          29          29    OK
+  [5]          18          18    OK
+  [6]           8           8    OK
+  [7]           0           0    OK
+  TEST 3 : PASS
+
+============================================================
+  FINAL SUMMARY
+  Checks passed : 24 / 24
+  OVERALL       : *** ALL TESTS PASSED ***
+============================================================
+
+$finish called at time : 1221 ns : File "C:/Users/swarn/Desktop/Verilog_Vivado/NTT_PolyMul_1/NTT_PolyMul_1.srcs/sim_1/new/ntt_tb.v" Line 485
